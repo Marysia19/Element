@@ -1,0 +1,444 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'TT Norms Pro Normal', sans-serif;
+    background-color: rgba(169, 160, 153, 1);
+    overflow-x: hidden;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+  }
+
+
+ 
+
+ .line1 {
+    top: 30vw;
+    margin-left: -1vw;
+    z-index: 2;
+    position: absolute;
+    width: 101vw;
+ }
+
+  @keyframes scroll{
+    0% {
+      transform: translate(0, 0);
+    }
+  
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+  .scroll_bg {
+    display: block;
+    width: 100%;
+ position: relative;
+ top: 27vw;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .img {
+    display: inline-block;
+    padding-left: 100%;
+    -webkit-animation: scroll 12.7s infinite linear;
+    -moz-animation: scroll 12.7s infinite linear;
+    animation: scroll 12.7s infinite linear;
+    background-image: url(../images/Rectangle\ 1.svg);
+    background-size: 100vw;
+    width: 100vw;
+    height: 34.5vw;
+    margin-left: -1vw;
+  }
+
+  @keyframes scroll2{
+    0% {
+      transform: translate(0, 0);
+    }
+  
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+  .scroll_bg2 {
+    position: relative;
+    top: 1.8vw;
+    display: block;
+    width: 100%;
+ 
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .img2 {
+    display: inline-block;
+    padding-left: 100%;
+    -webkit-animation: scroll 13s infinite linear;
+    -moz-animation: scroll 13s infinite linear;
+    animation: scroll 13s infinite linear;
+    background-image: url(../images/Rectangle\ 2.svg);
+    background-size: 100vw;
+    width: 100vw;
+    height: 25vw;
+    margin-left: -1vw;
+  }
+
+
+  .text {
+    top: 30px;
+   left: 1vw;
+    position: absolute;
+    cursor: pointer;
+    font-family: "InterRegular";
+    font-size: 16px; /* начальный размер шрифта */
+    font-family: Arial, sans-serif; /* начальный шрифт */
+    transition: font-size 0.5s ease, font-family 2s ease; /* переход */
+
+    color: rgb(255, 255, 255);
+font-size: 20vw;
+font-weight: 400;
+
+letter-spacing: 0%;
+text-align: center;
+}
+
+/* Стиль при наведении */
+.text:hover {
+    font-size: 21vw; /* конечный размер шрифта */
+    font-family: "InterThin";
+}
+
+
+
+
+
+  section {
+    display: flex;
+  width: max-content;
+ }
+
+ 
+ .div1 {
+    width: max-content;
+    font-family: "InterRegularItalic";
+     animation: marquee1 20s infinite linear;
+     animation-delay: -20s;
+     font-size: 6vw;
+     margin-left: 5vw;
+     color: white;
+ }
+
+ .div2 {
+    margin-left: -5vw;
+    width: max-content;
+    color: white;
+    font-family: "InterRegularItalic";
+    font-size: 6vw;
+     animation: marquee2 20s infinite linear;
+     animation-delay: -10s;
+ }
+
+
+
+
+@keyframes marquee1 {
+     0% {
+         transform: translateX(100%);
+     }
+     100% {
+         transform: translateX(-100%);
+     }
+ }
+
+ @keyframes marquee2 {
+     0% {
+         transform: translateX(0%);
+     }
+     100% {
+         transform: translateX(-200%);
+     }
+ }
+
+
+
+
+
+ .block-kran {
+    margin-top: 5vw;
+ }
+
+
+ .kran-karkas {
+    margin-top: 5vw;
+    left: 48vw;
+    position: absolute;
+     width: 45vw;
+ }
+ .line_kran {
+position: absolute;
+    background-color: white;
+    height: 11vw;
+    width: 1.2vw;
+    top: 14vw;
+    left: -16vw;
+    position: relative;
+
+
+    animation-name: circle-to-square;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+ }
+
+
+ #el2 {
+  position: absolute;
+    width: 10.7vw;
+    position: relative;
+    left: -20.8vw;
+    top: 13vw;
+ }
+
+
+@keyframes circle-to-square{
+    0% {
+        width: 1.2vw;
+        height: 9vw;
+        
+    }
+ 
+    100% {
+        width: 1.2vw;
+        height: 18vw;
+    }
+ }
+
+
+
+
+ .block-kran-flex {
+    display: flex;
+ } 
+ .ramka-div {
+   padding: 1vw;
+    z-index: 1;
+    top: 5vw;
+position: relative;
+    background-color: rgba(234, 230, 227, 1);
+    width: 30vw;
+height: 30vw;
+}
+
+.cub1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+    width: 30vw;
+    height: 30vw;
+    box-sizing: border-box;
+    border: 1.5vw solid rgb(105, 97, 90);
+
+    animation:.9s borderColorChange2 0.9s steps(2) alternate infinite;
+
+    
+}
+
+
+@keyframes borderColorChange {
+    0% {
+      border-color: rgb(105, 97, 90);
+    }
+   
+    100% {
+      border-color: rgba(174, 92, 36, 1);
+    }
+  }
+.cub1_mini {
+    animation-delay: 0s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26vw;
+    height: 26vw;
+    box-sizing: border-box;
+    border: 0.8vw solid rgb(105, 97, 90);
+    animation:.9s  borderColorChange2 .9s steps(2) alternate infinite;
+}
+
+.cub2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+    width: 22vw;
+    height: 22vw;
+    box-sizing: border-box;
+    border: 1.3vw solid rgb(105, 97, 90);
+   
+    animation:.9s borderColorChange2 .9s steps(3) alternate infinite;
+}
+.cub1_mini2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+    width: 18vw;
+    height: 18vw;
+    box-sizing: border-box;
+    border: 0.5vw solid rgb(105, 97, 90);
+
+    animation:.9s borderColorChange2 .9s steps(4) alternate infinite;
+}
+
+.cub3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+    width: 15vw;
+    height: 15vw;
+    box-sizing: border-box;
+    border: 1.2vw solid rgb(105, 97, 90);
+    animation:.9s borderColorChange2 .9s steps(5) alternate infinite;
+}
+.cub3_mini3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+    width: 12vw;
+    height: 12vw;
+    box-sizing: border-box;
+    border: 0.3vw solid rgb(105, 97, 90);
+    animation: .9s borderColorChange2 .9s steps(6) alternate infinite;
+}
+@keyframes borderColorChange2 {
+    0% {
+      border-color: rgb(105, 97, 90);
+    }
+  
+    100% {
+      border-color: rgba(174, 92, 36, 1);
+    }
+  }
+
+  .cub4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+    width: 10vw;
+    height: 10vw;
+    box-sizing: border-box;
+    border: 1vw solid rgb(105, 97, 90);
+    animation: .9s borderColorChange2 .9s steps(7) alternate infinite;
+  }
+  .cub4_mini4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+    width: 7.5vw;
+    height: 7.5vw;
+    box-sizing: border-box;
+    border: 0.2vw solid rgb(105, 97, 90);
+    animation: .9s borderColorChange2 .9s steps(8) alternate infinite;
+}
+
+.ramka2 {
+  position: relative;
+  top: 5vw;
+width: 32vw;
+height: 32vw;
+    background-image: url(../images/a4.svg);
+   
+    transition: 0.5s;
+    background-size: cover;
+}
+.ramka2:hover {
+  background-image: url(../images/a3.svg);
+   
+}
+
+.flex2{
+  position: relative;
+  display: flex;
+}
+
+.ramka3 {
+  position: relative;
+  top: 5vw;
+
+width: 32vw;
+height: 32vw;
+background-image: url(../images/b1.svg);
+background-size: cover;
+}
+.krug1{
+  width: 15.5vw;
+  position: relative;
+  top: 15vw;
+  left: 5vw;
+  animation:10s mercury infinite linear;
+  transform-origin:11.417vw 0.260vw;
+
+
+  box-sizing: border-box;
+border: 0.2vw solid rgb(255, 255, 255);
+background: rgb(177, 92, 35);
+width: 7vw;
+height: 7vw;
+border-radius: 100%;
+}
+.krug2{
+  width: 15.5vw;
+  position: absolute;
+  top: 15vw;
+  left: 5vw;
+  animation:10s mercury infinite linear;
+  transform-origin:12.2vw 0.3vw;
+  animation-delay: 1.2s;
+
+  box-sizing: border-box;
+border: 0.2vw solid rgb(255, 255, 255);
+background: rgb(177, 92, 35);
+width: 6vw;
+height: 6vw;
+border-radius: 100%;
+}
+.krug3{
+  width: 15.5vw;
+  position: absolute;
+  top: 15vw;
+  left: 5vw;
+  animation:10s mercury infinite linear;
+  transform-origin:11.5vw 0.1vw;
+  animation-delay: 2.2s;
+
+  box-sizing: border-box;
+border: 0.2vw solid rgb(255, 255, 255);
+background: rgb(177, 92, 35);
+width: 4.7vw;
+height: 4.7vw;
+border-radius: 100%;
+}
+
+
+
+
+@keyframes mercury{
+  from{
+    transform:rotate(0)
+  }
+  to{
+    transform:rotate(-360deg)
+  }
+}
