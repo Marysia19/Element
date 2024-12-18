@@ -413,6 +413,14 @@ top: 5vw;
 }
 
 
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 .tr {
  
@@ -486,6 +494,14 @@ font-family: "InterBlack";
 
 
 
+@keyframes blink {
+  0%, 20% {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  10% {
+    color: white;
+  }
+}
 
 
 .cont1 {
@@ -588,7 +604,19 @@ border: 3px solid rgb(255, 255, 255);
 
 }
 
-
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(225deg) ;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(225deg);
+  }
+}
 
 .box_gora {
   width: 48vw;
@@ -643,7 +671,17 @@ left: 57.5vw;
   animation-direction: alternate;
 }
 
+@keyframes circle-to-squar {
+  from {
+    width: 33.06vw;
+    height: 0vw;
+  }
 
+  to {
+    width: 33.05vw;
+    height: 67.85vw;
+  }
+}
 
 .mtxt {
   top: 32vw;
@@ -680,7 +718,7 @@ left: 57.5vw;
   animation: marquee 16s infinite linear; /* notice the infinite */
 }
 .marquee2:after{
-  content: " КОЗЛОВА МАРИЯ Б23УВКИ01 ВЕБ-ПОСТЕР";
+  content: "ПОЧУВСТВУЙ ПРИРОДНЫЙ УЮТ  ПОЧУВСТВУЙ ПРИРОДНЫЙ УЮТ ПОЧУВСТВУЙ";
 }
 
 

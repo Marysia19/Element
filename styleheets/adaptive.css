@@ -1,4 +1,4 @@
-@media (min-width: 300px ) and (max-width: 420px ) { 
+@media (max-width: 767px ) { 
     .waviy {
         font-size:20vw;
     }
@@ -246,7 +246,7 @@
       height: 51vw;
       position: absolute;
       background: rgb(105, 97, 90);
-      top: 179.5vw;
+      top: 173.5vw;
       
     }
 
@@ -319,4 +319,28 @@ left: 1vw;
       margin-top: 13vw;
     }
     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 530px ) {
+  .ramka4 {
+    width: 52vw;
+    height: 51vw;
+    position: absolute;
+    background: rgb(105, 97, 90);
+    top: 176.5vw;
+    
+  }
+
 }
